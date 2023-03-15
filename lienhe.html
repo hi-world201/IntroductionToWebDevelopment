@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="trangchu.html"><img src="images/logo.png" alt=""></a>
+        <nav>
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="dangnhap.html">Đăng nhập</a>
+            <a href="dangky.html">Đăng ký</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Liên hệ</h1>
+        <img src="./images/lienhe/check-in.png" alt="check-in">
+        <h1>Địa chi: 0123, Tòa Nhà ABC, TP Cần Thơ</h1>
+        <p>Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cảm ơn</p>
+
+        <form action="post" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Góp ý</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Họ tên:</label></td>
+                        <td><input id="name" type="text" placeholder="Vui lòng nhập Họ tên của bạn"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email: </label></td>
+                        <td><input id="email" type="email" placeholder="Vui lòng nhập địa chỉ Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="topic">Chủ đề: </label></td>
+                        <td>
+                            <select name="chude" id="topic" size="1">
+                                <option value="SP_DV">Về Sản Phẩm/ Dịch Vụ</option>
+                                <option value="UD_TV">Về Ưu đãi thành viên</option>
+                                <option value="TTD">Về Tin Tuyển Dụng</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="noidung">Nội dung</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="noidung" id="noidung" cols="50" rows="7"
+                                placeholder="Nội dung cần liên hệ"></textarea></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2"><input type="submit" value="Gửi"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; Bản quyền thuộc về FreeezeVN. <a href="https://www.facebook.com/">facebook</a> <a
+            href="https://twitter.com/">twitter</a> <a href="https://www.pinterest.com/">pinterest</a> <a
+            href="#logo">Về Đầu Trang</a>
+    </footer>
+</body>
+
+</html>
