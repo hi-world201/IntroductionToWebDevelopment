@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Đăng nhập</title>
-    <link rel="shortcut icon" type="image/vnd.microsoft" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/vnd.microsoft" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
@@ -28,37 +29,40 @@
             </div>
         </nav>
     </header>
-    <main>
-        <form action="post" enctype="application/x-www-form-urlencoded">
+    <main class="one-column">
+        <article>
             <fieldset>
-                <legend>ĐĂNG NHẬP</legend>
-                <table>
-                    <tr>
-                        <td colspan="2">
-                            <img src="./images/dangnhap/userlogin.png" alt="login">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email</label></td>
-                        <td><input id="email" type="text" name="email" placeholder="Nhập email"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="password1">Mật khẩu</label></td>
-                        <td><input id="password1" type="password" name="psw" placeholder="Nhập mật khẩu"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <input type="submit" value="Đăng Nhập">
-                            <input type="reset" value="Hủy">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Bạn quên <a href="">Mật khẩu?</a> <input type="checkbox"> Ghi nhớ cho lần đăng nhập sau</td>
-                    </tr>
-                </table>
+                <h1>ĐĂNG NHẬP</h1>
+                <form action="post" enctype="application/x-www-form-urlencoded">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <img src="./assets/images//dangnhap/userlogin.png" alt="login">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="email"><i class="fa-solid fa-envelope"></i></label></td>
+                            <td><input id="email" type="text" name="email" placeholder="Nhập email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password1"><i class="fa-solid fa-key"></i></label></td>
+                            <td><input id="password1" type="password" name="psw" placeholder="Nhập mật khẩu"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Bạn quên <a href="">Mật khẩu?</a> <input type="checkbox"> Ghi nhớ cho lần
+                                đăng
+                                nhập sau</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Đăng Nhập">
+                                <input type="reset" value="Hủy">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </fieldset>
-        </form>
+        </article>
     </main>
     <footer>
         &copy; Bản quyền thuộc về FreeezeVN. <a href="https://www.facebook.com/"><i class="fa fa-facebook"

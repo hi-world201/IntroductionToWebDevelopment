@@ -29,49 +29,55 @@
             </div>
         </nav>
     </header>
-    <main>
-        <form action="post" enctype="multipart/form-data">
+    <main class="one-column">
+        <article>
             <fieldset>
-                <legend>ĐĂNG KÝ</legend>
-                <table>
-                    <tr>
-                        <td><label for="email">Email</label></td>
-                        <td><input id="email" type="text" name="email" placeholder="Vui lòng nhập email"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="password1">Mật khẩu</label></td>
-                        <td><input id="password1" type="password" name="psw" placeholder="Vui lòng nhập mật khẩu"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="password2">Nhập lại mật khẩu</label></td>
-                        <td><input id="password2" type="password" name="psw2" placeholder="Vui lòng nhập mật khẩu"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="memberType">Cấp độ thành viên</label></td>
-                        <td>
-                            <input id="memberType" type="radio" value="bac" name="memberType"> Bạc
-                            <input type="radio" value="vang" name="memberType"> Vàng
-                            <input type="radio" value="bachkim" name="memberType"> Bạch Kim
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="avt">Ảnh đại diện</label></td>
-                        <td><input type="file"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều khoản & Quyền riêng
-                                tư
-                                của chúng tôi.</a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="reset" value="Hủy">
-                            <input type="submit" value="Đăng Ký">
-                        </td>
-                    </tr>
-                </table>
+                <h1>ĐĂNG KÝ</h1>
+                <form action="post" enctype="multipart/form-data">
+                    <!-- <legend>ĐĂNG KÝ</legend> -->
+                    <table>
+                        <tr>
+                            <td><label for="email"><i class="fa-solid fa-envelope"></i></label></td>
+                            <td><input id="email" type="text" name="email" placeholder="Vui lòng nhập email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password1"><i class="fa-solid fa-key"></i></label></td>
+                            <td><input id="password1" type="password" name="psw" placeholder="Vui lòng nhập mật khẩu">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="password2"><i class="fa-solid fa-key"></i></label></td>
+                            <td><input id="password2" type="password" name="psw2" placeholder="Vui lòng nhập mật khẩu">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="memberType"><i class="fa-solid fa-users"></i></label></td>
+                            <td>
+                                <input id="memberType" type="radio" value="bac" name="memberType"> Bạc
+                                <input type="radio" value="vang" name="memberType"> Vàng
+                                <input type="radio" value="bachkim" name="memberType"> Bạch Kim
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="avt"><i class="fa-solid fa-image-portrait"></i></label></td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều khoản & Quyền
+                                    riêng
+                                    tư
+                                    của chúng tôi.</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Đăng Ký">
+                                <input type="reset" value="Hủy">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </fieldset>
-        </form>
+        </article>
     </main>
     <footer>
         &copy; Bản quyền thuộc về FreeezeVN. <a href="https://www.facebook.com/"><i class="fa fa-facebook"

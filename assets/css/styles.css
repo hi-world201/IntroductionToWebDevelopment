@@ -10,7 +10,6 @@ body {
     width: 1024px;
     font-size: 1.2em;
     font-family: Helvetica, arial, sans-serif;
-    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -403,14 +402,38 @@ form i {
     text-align: center;
     background-color: #cddc39;
     cursor: pointer;
+    color: #fff;
 }
 
 form input,
 form select {
     display: inline-block;
+    padding: 2px;
     border: 1px solid #fff;
-    height: 20px;
     font-size: 17px;
     vertical-align: top;
     box-shadow: 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+}
+
+textarea {
+    font-size: 17px;
+    padding: 2px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-top: 100px;
+    width: calc(100% - 35.8px);
+}
+
+fieldset form {
+    width: 50%;
+}
+
+fieldset img {
+    width: 40%;
 }
