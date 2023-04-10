@@ -1,11 +1,13 @@
 /* rule chung */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     display: grid;
     grid-template-areas: 'header-cell' 'nav-cell' 'main-cell' 'footer-cell';
     top: 0;
     margin: 0 auto;
-    /* border: 1px solid; */
     padding: 0 5px;
     width: 1024px;
     font-size: 1.2em;
@@ -107,18 +109,21 @@ nav a:hover {
     background-color: #ed4190;
 }
 
-nav div {
-    display: inline-block;
-    padding-top: 3px;
+nav div:last-child {
+    display: flex;
+    margin-top: 3px;
     margin-left: auto;
 }
 
-nav i {
-    padding: 4px;
+nav i,
+form i {
+    padding: 4px 4px;
     min-width: 30px;
     text-align: center;
     background-color: #cddc39;
     cursor: pointer;
+    height: 20px; 
+    margin-right: 6px;
 }
 
 nav input {
@@ -138,6 +143,51 @@ nav input {
 
 .color-pink {
     color: #ed4190;
+}
+
+/* Form */
+
+table,
+tr,
+td {
+    padding: 2px;
+}
+
+form td {
+    vertical-align: bottom;
+}
+
+form input,
+form select {
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid #fff;
+    font-size: 17px;
+    vertical-align: top;
+    box-shadow: 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+}
+
+textarea {
+    font-size: 17px;
+    padding: 2px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-top: 100px;
+    width: calc(100% - 35.8px);
+}
+
+fieldset form {
+    width: 50%;
+}
+
+fieldset img {
+    width: 40%;
 }
 
 /* Main */
@@ -166,7 +216,7 @@ main.two-column-left {
 }
 
 main.three-column {
-    grid-template-areas: "left-cell article-cellright-cell";
+    grid-template-areas: "left-cell article-cell right-cell";
     grid-template-columns: 1fr 3fr 1fr;
 }
 
@@ -219,13 +269,14 @@ footer i {
 }
 
 footer a[href*="#logo"] {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     background-image: url("../images/top.png");
     background-size: cover;
-    width: 80px;
-    height: 80px;
-    right: 5px;
+    height: 84px;
+    width: 84px;
+    bottom: 10px; 
+    right: 10px;
 }
 
 article {
@@ -386,54 +437,42 @@ section span {
     justify-content: center;
 }
 
-table,
-tr,
-td {
-    padding: 2px;
+/* Order */
+
+.order-details table {
+    width: 100%;
 }
 
-td {
-    vertical-align: bottom;
+.order-details table, 
+.order-details tr,
+.order-details td,
+.order-details th {
+    border: 1px solid #000;
+    vertical-align: center;
 }
 
-form i {
-    padding: 4px;
-    min-width: 30px;
+.order-details__submit-btn {
     text-align: center;
+}
+
+.order-details img {
+    display: block;
+    margin: auto;
+}
+
+.order-details i {
+    padding: 4px 4px;
+    min-width: 30px;
     background-color: #cddc39;
     cursor: pointer;
-    color: #fff;
+    height: 20px; 
+    color:#F9076D;
 }
 
-form input,
-form select {
-    display: inline-block;
-    padding: 2px;
-    border: 1px solid #fff;
-    font-size: 17px;
-    vertical-align: top;
-    box-shadow: 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+.text-center {
+    text-align:center;
 }
 
-textarea {
-    font-size: 17px;
-    padding: 2px;
-}
-
-fieldset {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
-    margin-top: 100px;
-    width: calc(100% - 35.8px);
-}
-
-fieldset form {
-    width: 50%;
-}
-
-fieldset img {
-    width: 40%;
+.text-right {
+    text-align: right;
 }

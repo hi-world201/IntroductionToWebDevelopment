@@ -11,9 +11,11 @@
 <body>
     <header>
         <a id="logo" href="trangchu.html"><img src="./assets/images/logo.png" alt=""></a>
+
         <img class="header-img1" src="./assets/images/header-img1.png" alt="">
         <img class="header-img2" src="./assets/images/header-img2.png" alt="">
         <img class="header-img3" src="./assets/images/header-img3.png" alt="">
+
         <nav>
             <a href="trangchu.html">Trang chủ</a>
             <a href="gioithieu.html">Giới thiệu</a>
@@ -22,13 +24,17 @@
             <a href="dangnhap.html">Đăng nhập</a>
             <a href="dangky.html">Đăng ký</a>
             <a href="lienhe.html">Liên hệ</a>
+
             <div>
-                <input type="text" name="" id="" placeholder="Nhập nội dung cần tìm...">
-                <i class="fa fa-search color-white" aria-hidden="true"></i>
-                <i class="fa fa-shopping-cart color-pink" aria-hidden="true"></i>
+                <form class="search-form" action="timkiem.html" method="get">
+                    <input class="search-form__input" type="text" name="" id="" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fa fa-search color-white search-form__btn" aria-hidden="true"></i>
+                </form>
+                <i class="fa fa-shopping-cart color-pink cart-btn" aria-hidden="true"></i>
             </div>
         </nav>
     </header>
+
     <main class="one-column">
         <article>
             <h1>Liên hệ</h1>
@@ -41,8 +47,8 @@
             </div>
 
             <h1>Góp ý</h1>
-            <div class="contact-form">
-                <form action="post" enctype="application/x-www-form-urlencoded">
+            <div>
+                <form class="contact-form" action="post" enctype="application/x-www-form-urlencoded">
                     <!-- <fieldset>
                 <legend>Góp ý</legend> -->
                     <table>
@@ -68,13 +74,13 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="noidung"><i class="fa fa-sticky-note color-white"
+                                <label for="content"><i class="fa fa-sticky-note color-white"
                                         aria-hidden="true"></i></label>
                             </td>
                             <!-- </tr>
                     <tr> -->
                             <td>
-                                <textarea name="noidung" id="noidung" cols="50" rows="7"
+                                <textarea name="content" id="content" cols="50" rows="7"
                                     placeholder="Nội dung cần liên hệ"></textarea>
                             </td>
                         </tr>
@@ -94,6 +100,7 @@
                 aria-hidden="true"></i></a> <a href="#logo"></a>
     </footer>
 
+    <script src="./assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/ba6a6be020.js" crossorigin="anonymous"></script>
 </body>
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đơn hàng</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft" href="./assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="trangchu.html"><img src="./assets/images/logo.png" alt=""></a>
+
+        <img class="header-img1" src="./assets/images/header-img1.png" alt="">
+        <img class="header-img2" src="./assets/images/header-img2.png" alt="">
+        <img class="header-img3" src="./assets/images/header-img3.png" alt="">
+
+        <nav>
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="dangnhap.html">Đăng nhập</a>
+            <a href="dangky.html">Đăng ký</a>
+            <a href="lienhe.html">Liên hệ</a>
+
+            <div>
+                <form class="search-form" action="timkiem.html" method="get">
+                    <input class="search-form__input" type="text" name="" id="" placeholder="Nhập nội dung cần tìm...">
+                    <i class="fa fa-search color-white search-form__btn" aria-hidden="true"></i>
+                </form>
+                <i class="fa fa-shopping-cart color-pink cart-btn" aria-hidden="true"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="one-column">
+        <article>
+            <h1>Chi tiết đơn hàng</h1>
+            <div class="order-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình SP</th>
+                        <th>Tên SP</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="text-right" colspan="6">Tổng thành tiền (A) = <span id="total-pretax">0</span></td></tr>
+                    <tr>
+                        <td class="text-right" colspan="6">Chiết khấu (B) = <span id="discount-rate">0.1</span> x A = <span id="discount">0</span></td></tr>
+                    <tr>
+                        <td class="text-right" colspan="6">Thuế (C) = 10% x (A - B) = <span id="tax">0</span></td></tr>
+                    <tr>
+                        <td class="text-right" colspan="6">Tổng đơn hàng = A - B + C = <span id="total"></span></td></tr>
+                    <tr>
+                       <td class="order-details__submit-btn" colspan="6">
+                            <button>Xác nhận đơn hàng</button>
+                       </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        </article>
+    </main>
+    
+    <footer>
+        &copy; Bản quyền thuộc về FreeezeVN. <a href="https://www.facebook.com/"><i class="fa fa-facebook"
+                aria-hidden="true"></i></a> <a href="https://twitter.com/"><i class="fa fa-twitter"
+                aria-hidden="true"></i></a> <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"
+                aria-hidden="true"></i></a> <a href="#logo"></a>
+    </footer>
+
+    <script src="./assets/js/index.js" charset="UTF-8"></script>
+    <script src="https://kit.fontawesome.com/ba6a6be020.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
