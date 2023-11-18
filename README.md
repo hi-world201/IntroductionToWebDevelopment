@@ -4,7 +4,7 @@ Nguyễn Trọng Hữu
 
 ## Subject
 Thực hành: Nhập môn lập trình web CT188
-[![Logo](https://hi-world201.github.io/nhapmonweb/assets/images/logo.png)](https://hi-world201.github.io/nhapmonweb/trangchu.html)
+[![Logo](https://hi-world201.github.io/IntroductionToWebDevelopment/trangchu.html)
 
 
 
